@@ -1,0 +1,10 @@
+<%= form_for :products, url: "/products/add" do |form| %>
+    <%= form.text_field :product, id: 'product'%>
+    <%= form.submit "add to cart" %>
+  <% end %>
+
+<!-- <form action="/products/add" method="post">
+<!--   <label for="product">Product for:</label>
+<!--   <input id="product" name="product" type="text" />
+<!--   <input name="commit" type="submit" value="add to cart" />
+<!-- </form> 
